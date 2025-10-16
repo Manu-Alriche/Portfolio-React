@@ -3,7 +3,7 @@ function Projets() {
     frontend: [
       {
         title: "ToDo App",
-        image: "../public/assets/Todo.png",
+        image: "/assets/Todo.png",
         description: (
           <>
             <strong>React / Typescript / Tailwind CSS</strong>
@@ -17,7 +17,7 @@ function Projets() {
       },
       {
         title: "O'Coffee",
-        image: "../public/assets/O'Coffee.png",
+        image: "/assets/O'Coffee.png",
         description: (
           <>
             <strong>Node / Express</strong>
@@ -32,7 +32,7 @@ function Projets() {
     backend: [
       {
         title: "Projet Ghibliothèque",
-        image: "../public/assets/ghibliotheque.png",
+        image: "/assets/ghibliotheque.png",
         description: (
           <>
             <strong>Python / Django</strong>
@@ -45,7 +45,7 @@ function Projets() {
       },
       {
         title: "Projet O'Chat",
-        image: "../public/assets/O'Chat.png",
+        image: "/assets/O'Chat.png",
         description: (
           <>
             <strong>Svelte</strong>
@@ -60,7 +60,7 @@ function Projets() {
     fullstack: [
       {
         title: "O'Chat",
-        image: "../public/assets/O'Chat.png",
+        image: "/assets/O'Chat.png",
         description: (
           <>
             <strong>Svelte</strong>
@@ -75,7 +75,7 @@ function Projets() {
       },
       {
         title: "Projet GreenRoots",
-        image: "../public/assets/GreenRoots.png",
+        image: "/assets/GreenRoots.png",
         description: (
           <>
             <strong>SvelteKit / Express</strong>
