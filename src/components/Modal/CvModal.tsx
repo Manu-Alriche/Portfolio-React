@@ -1,4 +1,16 @@
-export default function CvModal({ isOpen, onClose, onDownload, cvUrl }) {
+interface CvModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onDownload: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  cvUrl: string;
+}
+
+const CvModal: React.FC<CvModalProps> = ({
+  isOpen,
+  onClose,
+  onDownload,
+  cvUrl,
+}) => {
   if (!isOpen) return null;
 
   return (
@@ -41,4 +53,6 @@ export default function CvModal({ isOpen, onClose, onDownload, cvUrl }) {
       </div>
     </div>
   );
-}
+};
+
+export default CvModal;

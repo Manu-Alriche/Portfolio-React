@@ -6,7 +6,9 @@ function Navbar() {
   const [showCvModal, setShowCvModal] = useState(false);
   const CV_URL = "/CV_Professionnel.pdf";
 
-  const handleDownloadCv = async (e) => {
+  const handleDownloadCv = async (
+    e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>
+  ) => {
     e.preventDefault();
     try {
       const res = await fetch(CV_URL);
@@ -30,7 +32,7 @@ function Navbar() {
     {
       label: "CV",
       icon: "fa-solid fa-file-arrow-down",
-      onClick: (e) => {
+      onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         setShowCvModal(true);
       },
